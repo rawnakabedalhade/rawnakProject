@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.background {
+    /* bgc color*/
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 461px;
+    top: 0px;
+    /* background-color: rgb(243, 243, 235); */
+    background-image:
+        linear-gradient(to bottom, rgba(213, 213, 204, 0.5), rgba(255, 255, 255, 0.5)), url('../imges/layerColorBackground.jpeg');
+
+}
+
+.profile {
+    /*profile photo*/
+    position: fixed;
+    z-index: 100;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: 40px;
+    top: 6px
+}
+
+.logo {
+    /* My Name*/
+    position: absolute;
+    color: #000;
+    top: 23px;
+    left: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo:hover {
+    color: black;
+    font-weight: bold;
+}
+
+nav,
+.hamburger {
+    /*nav bar*/
+    width: 100%;
+    position: fixed;
+    /*Keeps it fixed while scrolling*/
+    z-index: 100;
+    top: 0;
+    height: 70px;
+    margin: 0 auto;
+    background-color: rgb(226, 226, 220);
+}
+
+.hamburger {
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 760px;
+}
+
+nav ul li a {
+    margin-top: 23px;
+    text-decoration: none;
+    width: 100px;
+    height: 70px;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+section {
+    /* section that contain the introduction of the project*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    width: 844px;
+    height: 200px;
+}
+
+section h1 {
+    width: 404px;
+    height: 118px;
+    font-size: 80px;
+    top: 220px;
+    margin: auto;
+    width: 404px;
+    height: 118px;
+    direction: rtl;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1
+}
+
+section p {
+    width: 844px;
+    height: 59px;
+    font-size: 20px;
+    direction: rtl;
+    text-align: center;
+    top: 342px;
+    margin-left: 10px;
+    color: #3A3A3A;
+    opacity: 1
+}
+
+.container {
+    /* contain the coding languages that used in the project*/
+    position: absolute;
+    top: 461px;
+    width: 100%;
+    height: 70px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1
+}
+
+.codingImages {
+    width: 70px;
+    height: 70px;
+}
+
+.languagesPhotosGrid {
+    /* grid to keep codingImages in one row */
+    width: 1100px;
+    height: 70px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(11, 100px);
+    grid-template-rows: 1;
+}
+
+#aboutMe {
+    /* a box that contain description and photo about me*/
+
+    position: absolute;
+    width: 100vw;
+    height: 600px;
+    top: 531px;
+}
+
+#aboutMe>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 46vw;
+    margin-top: 100px;
+
+}
+
+#aboutMe>h2 {
+    margin: auto;
+    font-size: 35px;
+    width: 132px;
+    height: 52px;
+    color: #3A3A3A
+}
+
+#aboutMe>p {
+    font-size: 20px;
+    direction: rtl;
+    width: 550px;
+    height: 232px;
+    text-align: center;
+    color: #3A3A3A;
+    margin: auto;
+}
+
+#aboutMe>button {
+    /* Button to download the CV*/
+    width: 260px;
+    height: 40px;
+    background-color: rgb(243, 243, 235);
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 42vw;
+    margin-top: 0px;
+
+
+}
+
+#gridContainer {
+    width: 100%;
+    height: 1558px;
+    top: 1142px;
+    margin-top: 0;
+    background: #F6F6F6;
+    opacity: 1;
+}
+
+
+#gridContainer>h2 {
+    width: 234px;
+    height: 52px;
+    font-size: 36px;
+    color: #3A3A3A;
+    opacity: 1;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+#gridContainer>p {
+    width: 576px;
+    height: 58px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1
+}
+
+#gridContainer .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 405px);
+    grid-template-rows: repeat(2, 518px);
+    justify-content: center;
+    gap: 50px;
+}
+
+.project {
+    background-color: white;
+}
+
+.projectsGrid .project1 #f {
+    background-image: url("imges/now.png");
+    width: 405;
+    height: 223px;
+    margin-top: 0;
+    position: absolute;
+    z-index: 200;
+}
+
+#contact {
+    width: 100%;
+    height: 958px;
+    background-color: #3A3A3A;
+    opacity: 100%;
+    top: 2950px;
+}
+
+#contact>img {
+    top: 2950px;
+    width: 770px;
+    height: 671px;
+    background: transparent url('imges/mailImage.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#information {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(243, 243, 235);
+    top: 3477px;
+}
+
+#information .gridInformation {
+    display: grid;
+    margin-top: 42px;
+    grid-template-columns: repeat(6, 120px);
+    grid-template-rows: repeat(1, 78px);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.license {
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: #000;
+    position: fixed;
+    z-index: 100;
+}
+
+.license #all_winnings_reserved {
+    z-index: 100;
+    position: fixed;
+    width: 148px;
+    height: 28px;
+    text-align: right;
+    margin-top: 5px;
+    right: 10px;
+    direction: rtl;
+    color: rgb(243, 243, 235);
+}
+
+.license #myName {
+    z-index: 100;
+    position: fixed;
+    margin-top: 5px;
+    left: 10px;
+    width: 148px;
+    height: 28px;
+    text-align: left;
+    color: rgb(243, 243, 235);
+}
+
+
+@media (max-width:550px) {
+    /*for mobiles*/
+
+    .hamburger {
+        display: block;
+
+    }
+
+    nav,
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        direction: rtl;
+        top: 0;
+        right: 0;
+        margin-right: 4px;
+        border-radius: 0;
+        width: 98%;
+        height: 40px;
+        background-color: rgb(226, 226, 220);
+
+    }
+
+
+    .list {
+        margin-top: 40px;
+        margin-bottom: 2px;
+    }
+
+    nav ul li {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        line-height: 1.5;
+        text-decoration: none;
+        width: 100px;
+        height: 35px;
+        color: #000;
+        display: block;
+        margin-top: 1%;
+        border: 2px solid black;
+        background-color: rgb(226, 226, 220);
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+
+    nav ul {
+        display: none;
+    }
+
+    nav .hamburger:hover+ul {
+        display: block;
+    }
+
+    .background {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 331px;
+        z-index: 100;
+        background-color: rgb(243, 243, 235);
+        top: 0px;
+    }
+
+    .profile {
+        /*profile photo*/
+        position: fixed;
+        z-index: 100;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        left: 10px;
+        top: 6px
+    }
+
+    .logo {
+        position: absolute;
+        z-index: 100;
+        top: 10px;
+        left: 50px;
+
+    }
+
+    section {
+        /* section that contain the introduction of the project*/
+        margin: auto auto;
+        width: 348px;
+        height: 168px;
+
+    }
+
+    section h1 {
+        font-size: 46px;
+        top: 70px;
+        width: 233px;
+        height: 67px;
+        margin: auto auto;
+        direction: rtl;
+        color: #3A3A3A;
+        opacity: 1
+    }
+
+    section p {
+        margin-top: 5px;
+        font-size: 20px;
+        width: 345px;
+        height: 97px;
+        direction: rtl;
+        text-align: center;
+        color: #3A3A3A;
+        opacity: 1
+    }
+
+    .container {
+        /* contain the coding languages that used in the project*/
+        top: 330px;
+        width: 100vw;
+        height: 111px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        opacity: 1
+    }
+
+    .codingImages {
+        width: 45px;
+        height: 45px;
+    }
+
+    .languagesPhotosGrid {
+        /* grid to keep codingImages in two rows */
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 45px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 45px);
+        grid-template-rows: repeat(2, 100%)
+    }
+
+    #aboutMe {
+        /* a box that contain description and photo about me*/
+        position: absolute;
+        width: 100vw;
+        height: 720px;
+        top: 531px;
+    }
+
+    #aboutMe>img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 35vw;
+        margin-top: 5px;
+
+    }
+
+    #aboutMe>h2 {
+        margin: auto;
+        font-size: 35px;
+        width: 132px;
+        height: 52px;
+        color: #3A3A3A
+    }
+
+    #aboutMe>p {
+        font-size: 20px;
+        direction: rtl;
+        width: 323px;
+        height: 286px;
+        text-align: center;
+        color: #3A3A3A;
+        margin: auto;
+    }
+
+    #aboutMe>button {
+        /* Button to download the CV*/
+        width: 135px;
+        height: 28px;
+        background-color: rgb(243, 243, 235);
+        border-radius: 15px;
+        text-align: center;
+        margin-left: 35vw;
+        margin-top: 25px;
+
+    }
+
+    #gridContainer {
+        width: 100%;
+        height: 3179px;
+        top: 1272px;
+        margin-top: 0;
+        background: #F6F6F6;
+        opacity: 1;
+    }
+
+
+    #gridContainer>h2 {
+        width: 162px;
+        height: 37px;
+        font-size: 25px;
+        color: #3A3A3A;
+        opacity: 1;
+        text-align: center;
+        margin-top: 30px;
+        margin: auto;
+    }
+
+    #gridContainer>p {
+        width: 349px;
+        height: 44px;
+        margin: auto;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #3A3A3A;
+        opacity: 1
+    }
+
+    #gridContainer .projectsGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 343px);
+        grid-template-rows: repeat(6, 437px);
+        justify-content: center;
+        gap: 42px;
+    }
+
+    .project {
+        background-color: white;
+    }
+
+    #contact {
+        width: 100%;
+        height: 641px;
+        background-color: #3A3A3A;
+        opacity: 100%;
+        top: 4600px;
+    }
+
+    #information {
+        width: 100%;
+        height: 427px;
+        background-color: rgb(243, 243, 235);
+        top: 5100px;
+    }
+
+    #information .gridInformation {
+        display: grid;
+        margin-top: 42px;
+        grid-template-columns: repeat(2, 55px);
+        grid-template-rows: repeat(3, 100px);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .license {
+        width: 100%;
+        height: 30px;
+        bottom: 0;
+        background-color: #000;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .license #all_winnings_reserved {
+        z-index: 100;
+        position: fixed;
+        width: 67px;
+        height: 13px;
+        text-align: right;
+        margin-top: 5px;
+        right: 10px;
+        direction: rtl;
+        color: rgb(243, 243, 235);
+    }
+
+    .license #myName {
+        z-index: 100;
+        position: fixed;
+        margin-top: 5px;
+        left: 10px;
+        width: 33px;
+        height: 13px;
+        text-align: left;
+        color: rgb(243, 243, 235);
+    }
+
+
+}
