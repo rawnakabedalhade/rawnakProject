@@ -153,40 +153,32 @@ nav ul li a:hover {
 }
 
 #aboutMe>img {
-    width: 100px;
-    height: 100px;
+    width: 5.2vw;
+    height: 9.25vh;
     border-radius: 50%;
 
 }
 
 #aboutMe>h2 {
-    margin: auto;
     font-size: 35px;
-    width: 132px;
-    height: 52px;
-    color: #3A3A3A
+    color: #3A3A3A;
+    text-align: center;
 }
 
 #aboutMe>p {
     font-size: 20px;
-    direction: rtl;
-    width: 550px;
-    height: 232px;
     text-align: center;
     color: #3A3A3A;
-    margin: auto;
 }
 
 #aboutMe>button {
     /* Button to download the CV*/
-    width: 260px;
-    height: 40px;
+    display: block;
+    width: 13.54vw;
+    height: 4.63vh;
     background-color: rgb(243, 243, 235);
     border-radius: 25px;
     text-align: center;
-    margin-left: 42vw;
-    margin-top: 0px;
-
 
 }
 
