@@ -2,16 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    direction: rtl;
 }
 
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .background {
     /* bgc color*/
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 100;
-    width: 100%;
-    height: 461px;
+    width: 100vw;
+    height: 7.4vh;
     top: 0px;
     /* background-color: rgb(243, 243, 235); */
     background-image:
@@ -21,21 +28,15 @@
 
 .profile {
     /*profile photo*/
-    position: fixed;
     z-index: 100;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    left: 40px;
-    top: 6px
+    width: 2.6vw;
+    height: 4.63vh;
 }
 
 .logo {
     /* My Name*/
-    position: absolute;
     color: #000;
-    top: 23px;
-    left: 120px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -48,11 +49,12 @@ nav,
 .hamburger {
     /*nav bar*/
     width: 100%;
-    position: fixed;
     /*Keeps it fixed while scrolling*/
-    z-index: 100;
-    top: 0;
-    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 7.4vh;
     margin: 0 auto;
     background-color: rgb(226, 226, 220);
 }
@@ -68,17 +70,21 @@ nav,
 nav ul {
     list-style-type: none;
     display: flex;
-    margin-left: 760px;
+    height: 100%;
+
+}
+
+nav ul li {
+    margin-right: 20px;
+    width: 100px;
+    height: 70px;
+    display: block;
 }
 
 nav ul li a {
-    margin-top: 23px;
     text-decoration: none;
-    width: 100px;
-    height: 70px;
     color: #000;
-    display: block;
-    text-align: center;
+    /* text-align: center; */
     font-size: 1.2em;
 }
 
@@ -86,86 +92,70 @@ nav ul li a:hover {
     font-weight: bolder;
 }
 
-section {
-    /* section that contain the introduction of the project*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 1;
-    width: 844px;
-    height: 200px;
+.port-container {
+    background-image:
+        linear-gradient(to bottom, rgba(213, 213, 204, 0.5), rgba(255, 255, 255, 0.5)), url('../imges/layerColorBackground.jpeg');
+    height: 42.68vh;
+    width: 100vw;
 }
 
-section h1 {
-    width: 404px;
-    height: 118px;
+.portfolio {
+    /* section that contain the introduction of the project*/
+    z-index: 1;
+    width: 100vw;
+    height: 42.6vh;
+}
+
+.portfolio h1 {
     font-size: 80px;
-    top: 220px;
-    margin: auto;
-    width: 404px;
-    height: 118px;
-    direction: rtl;
     letter-spacing: 0px;
     color: #3A3A3A;
     opacity: 1
 }
 
-section p {
-    width: 844px;
-    height: 59px;
+.portfolio p {
     font-size: 20px;
-    direction: rtl;
     text-align: center;
-    top: 342px;
-    margin-left: 10px;
     color: #3A3A3A;
     opacity: 1
 }
 
 .container {
     /* contain the coding languages that used in the project*/
-    position: absolute;
-    top: 461px;
-    width: 100%;
-    height: 70px;
+    width: 100vw;
+    height: 12vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 0.46vh;
     opacity: 1
 }
 
 .codingImages {
-    width: 70px;
-    height: 70px;
+    width: 5.2vw;
+    height: auto;
 }
 
 .languagesPhotosGrid {
     /* grid to keep codingImages in one row */
-    width: 1100px;
-    height: 70px;
-    margin: 0 auto;
+    width: 100vw;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(11, 100px);
     grid-template-rows: 1;
+    justify-items: center;
+    align-items: center;
 }
 
 #aboutMe {
     /* a box that contain description and photo about me*/
-
-    position: absolute;
     width: 100vw;
-    height: 600px;
-    top: 531px;
+    height: 55.5vh;
 }
 
 #aboutMe>img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-left: 46vw;
-    margin-top: 100px;
 
 }
 
@@ -200,6 +190,7 @@ section p {
 
 }
 
+
 #gridContainer {
     width: 100%;
     height: 1558px;
@@ -210,7 +201,7 @@ section p {
 }
 
 
-#gridContainer>h2 {
+#gridContainer .works {
     width: 234px;
     height: 52px;
     font-size: 36px;
@@ -221,7 +212,7 @@ section p {
     margin: auto;
 }
 
-#gridContainer>p {
+#gridContainer .desWork {
     width: 576px;
     height: 58px;
     margin: auto;
@@ -233,26 +224,35 @@ section p {
 
 #gridContainer .projectsGrid {
     display: grid;
-    grid-template-columns: repeat(3, 405px);
-    grid-template-rows: repeat(2, 518px);
-    justify-content: center;
-    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 15px;
 }
 
-.project {
-    background-color: white;
+.projectItem {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 47.9vh;
+    width: 21vw;
+    justify-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.555);
 }
 
-.projectsGrid .project1 #f {
-    background-image: url("imges/now.png");
-    width: 405;
-    height: 223px;
-    margin-top: 0;
-    position: absolute;
-    z-index: 200;
+.projectItem img {
+    width: 21vw;
+    height: 20vh;
 }
+
+
+
 
 #contact {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 958px;
     background-color: #3A3A3A;
@@ -260,12 +260,36 @@ section p {
     top: 2950px;
 }
 
-#contact>img {
-    top: 2950px;
+
+#contact .inner-contact-text {
+    width: 549px;
+    height: 150px;
+    margin-left: 800px;
+}
+
+#contact .inner-contact-text>h1 {
+    width: 135px;
+    height: 53px;
+    margin-left: 420px;
+    font-size: 36px;
+    color: white;
+
+}
+
+#contact .inner-contact-text>p {
+    width: 548px;
+    height: 58px;
+    font-size: 20px;
+    text-align: right;
+    direction: rtl;
+    color: white;
+}
+
+#contact .contact-img {
+    margin-top: 0;
     width: 770px;
     height: 671px;
-    background: transparent url('imges/mailImage.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+
 }
 
 #information {
@@ -549,6 +573,7 @@ section p {
 
     .project {
         background-color: white;
+
     }
 
     #contact {
