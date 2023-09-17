@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@100&display=swap');
+$baseFont: Heebo;
+$backgroundImg: linear-gradient(to bottom, rgba(213, 213, 204, 0.5), rgba(255, 255, 255, 0.5)),
+    url('../imges/layerColorBackground.jpeg');
+$width: 100vw;
+$bgc: rgb(226, 226, 220);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}

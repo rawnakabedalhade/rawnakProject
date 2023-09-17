@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,23 +14,33 @@
     flex-direction: column;
 }
 
+.flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 .background {
-    /* bgc color*/
     display: block;
     position: fixed;
     z-index: 100;
     width: 100vw;
     height: 7.4vh;
     top: 0px;
-    /* background-color: rgb(243, 243, 235); */
-    background-image:
-        linear-gradient(to bottom, rgba(213, 213, 204, 0.5), rgba(255, 255, 255, 0.5)), url('../imges/layerColorBackground.jpeg');
 
 }
 
 .profile {
     /*profile photo*/
     z-index: 100;
+    margin-left: 50px;
     border-radius: 50%;
     width: 2.6vw;
     height: 4.63vh;
@@ -36,6 +48,7 @@
 
 .logo {
     /* My Name*/
+    margin-right: 700px;
     color: #000;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -84,7 +97,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #000;
-    /* text-align: center; */
+    line-height: 1.2;
     font-size: 1.2em;
 }
 
@@ -107,17 +120,19 @@ nav ul li a:hover {
 }
 
 .portfolio h1 {
+    font: normal normal 900 80px/118px Heebo;
     font-size: 80px;
     letter-spacing: 0px;
     color: #3A3A3A;
-    opacity: 1
+    opacity: 1;
 }
 
 .portfolio p {
+    font: normal normal medium 20px/30px Heebo;
     font-size: 20px;
     text-align: center;
     color: #3A3A3A;
-    opacity: 1
+    opacity: 1;
 }
 
 .container {
@@ -127,7 +142,7 @@ nav ul li a:hover {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     margin-bottom: 0.46vh;
-    opacity: 1
+    opacity: 1;
 }
 
 .codingImages {
@@ -139,138 +154,187 @@ nav ul li a:hover {
     /* grid to keep codingImages in one row */
     width: 100vw;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(11, 100px);
-    grid-template-rows: 1;
-    justify-items: center;
-    align-items: center;
 }
 
 #aboutMe {
     /* a box that contain description and photo about me*/
     width: 100vw;
-    height: 55.5vh;
+    height: 65vh;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
-#aboutMe>img {
-    width: 5.2vw;
-    height: 9.25vh;
+#aboutMe .aboutContent {
+    width: 41vw;
+
+}
+
+#aboutMe .aboutContent h2 {
+    font: normal normal 900 30px/52px Heebo;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+}
+
+#aboutMe .aboutContent p {
+    font: normal normal normal 15px/29px Heebo;
+    letter-spacing: 0px;
+    color: #3A3A3A;
+    opacity: 1;
+    font-size: 20px;
+    text-align: center;
+}
+
+#aboutMe .face {
+
+    width: 7.291666666vw;
+    height: 13.5vh;
     border-radius: 50%;
 
 }
 
-#aboutMe>h2 {
-    font-size: 35px;
-    color: #3A3A3A;
-    text-align: center;
-}
-
-#aboutMe>p {
-    font-size: 20px;
-    text-align: center;
-    color: #3A3A3A;
-}
-
-#aboutMe>button {
+#aboutMe .aboutContent>a {
     /* Button to download the CV*/
     display: block;
+    margin-top: 2em;
+    line-height: 2;
     width: 13.54vw;
     height: 4.63vh;
-    background-color: rgb(243, 243, 235);
+    background-color: rgb(226, 226, 220);
+    color: #000;
+    text-decoration: none;
     border-radius: 25px;
     text-align: center;
-
-}
-
-
-#gridContainer {
-    width: 100%;
-    height: 1558px;
-    top: 1142px;
-    margin-top: 0;
-    background: #F6F6F6;
-    opacity: 1;
-}
-
-
-#gridContainer .works {
-    width: 234px;
-    height: 52px;
-    font-size: 36px;
+    font: normal normal bold 15px/30px Heebo;
+    letter-spacing: 0.3px;
     color: #3A3A3A;
     opacity: 1;
-    text-align: center;
-    margin-top: 30px;
-    margin: auto;
+
 }
 
-#gridContainer .desWork {
-    width: 576px;
-    height: 58px;
-    margin: auto;
-    text-align: center;
-    letter-spacing: 0px;
-    color: #3A3A3A;
-    opacity: 1
-}
 
-#gridContainer .projectsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    gap: 15px;
-}
-
-.projectItem {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 47.9vh;
-    width: 21vw;
-    justify-items: center;
+.card {
+    display: flex;
+    flex-direction: column;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    width: 26.04vw;
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.555);
+    margin: 1em;
+    padding-bottom: 2em;
+
+
 }
 
-.projectItem img {
-    width: 21vw;
-    height: 20vh;
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+.gallery-container-inner>div {
+    margin-top: 2em;
+}
+
+.gallery-text-area-container {
+    text-align: center;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 28%;
+    margin: auto;
+    color: #3A3A3A;
+}
+
+.card-text-container {
+    width: 75%;
+}
+
+.gallery-text-area-container>h3 {
+    font: normal normal medium 23px/34px Heebo;
+}
+
+.gallery-text-area-container>p {
+    font: normal normal normal 16px/24px Heebo;
+}
+
+.card-text-container {
+    height: 150px;
+    justify-content: space-evenly;
+    color: #3A3A3A;
+
+}
+
+.card-text-container>h2 {
+    font: normal normal medium 60px Heebo;
+}
+
+.card-text-container>p {
+    font: normal normal normal 16px/24px Heebo;
+    text-align: center;
+}
+
+.card-img-container>img {
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 
+.btn-container {
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(226, 226, 220);
+    width: 10em;
+    height: 2em;
+    margin: 2em;
+}
 
+.btn-container .btn {
+    text-decoration: none;
+    color: #3A3A3A;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.gallery-btn>p {
+    text-align: center;
+    font: normal normal bold 20px/30px Heebo;
+    letter-spacing: 0.3px;
+    padding: 5em;
+}
+
+.card-technologies>img {
+    margin-top: 1em;
+    width: 100px;
+}
 
 #contact {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 958px;
+    width: 100vw;
+    height: 88.7vh;
     background-color: #3A3A3A;
-    opacity: 100%;
-    top: 2950px;
+    opacity: 1;
+
 }
 
 
 #contact .inner-contact-text {
-    width: 549px;
-    height: 150px;
-    margin-left: 800px;
+    width: 28.6vw;
+    height: 11.11vh;
+    margin: 9.26vh 15.8vw 0 0;
+    font: normal normal 900 20px/33px Heebo;
 }
 
 #contact .inner-contact-text>h1 {
-    width: 135px;
-    height: 53px;
-    margin-left: 420px;
     font-size: 36px;
     color: white;
 
 }
 
 #contact .inner-contact-text>p {
-    width: 548px;
-    height: 58px;
     font-size: 20px;
     text-align: right;
     direction: rtl;
@@ -280,26 +344,36 @@ nav ul li a:hover {
 #contact .contact-img {
     margin-top: 0;
     width: 770px;
-    height: 671px;
+    height: 660px;
 
 }
 
-#information {
-    width: 100%;
+#socialMedia {
     height: 200px;
-    background-color: rgb(243, 243, 235);
-    top: 3477px;
+    width: 100%;
+    background-color: rgb(226, 226, 220);
 }
 
-#information .gridInformation {
+#socialMedia .iconContainer {
+    width: 63.5%;
+    height: 100%;
     display: grid;
-    margin-top: 42px;
-    grid-template-columns: repeat(6, 120px);
-    grid-template-rows: repeat(1, 78px);
+    grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     align-items: center;
 }
 
+#socialMedia .iconContainer .containerItem img {
+    margin-bottom: 15px;
+}
+
+#socialMedia .iconContainer .containerItem h5 {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+
+}
 
 
 .license {
@@ -332,6 +406,28 @@ nav ul li a:hover {
     height: 28px;
     text-align: left;
     color: rgb(243, 243, 235);
+}
+
+.formControl {
+    width: 29.29vw;
+    margin-bottom: 2.09vh;
+    box-shadow: 0px 4px 0px 0px rgb(226, 226, 220);
+}
+
+.formControl label {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: right;
+}
+
+.formControl input {
+    width: 100%;
+    height: 4.89vh;
+}
+
+.formControl input[id=textContain] {
+    width: 100%;
+    height: 9.79020979020979vh;
 }
 
 
@@ -402,7 +498,7 @@ nav ul li a:hover {
     }
 
     .profile {
-        /*profile photo*/
+
         position: fixed;
         z-index: 100;
         border-radius: 50%;
@@ -421,7 +517,7 @@ nav ul li a:hover {
     }
 
     section {
-        /* section that contain the introduction of the project*/
+
         margin: auto auto;
         width: 348px;
         height: 168px;
@@ -451,7 +547,7 @@ nav ul li a:hover {
     }
 
     .container {
-        /* contain the coding languages that used in the project*/
+
         top: 330px;
         width: 100vw;
         height: 111px;
@@ -466,7 +562,7 @@ nav ul li a:hover {
     }
 
     .languagesPhotosGrid {
-        /* grid to keep codingImages in two rows */
+
         justify-content: center;
         align-items: center;
         width: 270px;
@@ -478,7 +574,7 @@ nav ul li a:hover {
     }
 
     #aboutMe {
-        /* a box that contain description and photo about me*/
+
         position: absolute;
         width: 100vw;
         height: 720px;
@@ -513,7 +609,7 @@ nav ul li a:hover {
     }
 
     #aboutMe>button {
-        /* Button to download the CV*/
+
         width: 135px;
         height: 28px;
         background-color: rgb(243, 243, 235);

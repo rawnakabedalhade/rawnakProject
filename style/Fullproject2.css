@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@100&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@100&family=Satisfy&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg {
+    width: 100vw;
+    height: 62.93vh;
+    background-image: url(../imges/project2inner.png);
+    position: relative;
+}
+
+.bg-text-container {
+    position: absolute;
+    top: 120px;
+    right: 120px;
+    width: 30.53vw;
+    height: 69.93vh;
+    background: #1A1A1AD4 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.text-container h1 {
+    font: normal normal 900 36px/53px Heebo;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    color: #FFFFFF;
+    opacity: 1;
+
+}
+
+.text-container p {
+    font: normal normal normal 20px/29px Heebo;
+    margin-top: 10px;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+    text-align: center;
+}
+
+.form-container {
+    margin-top: 44px;
+}
+
+.name label,
+.email label {
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.email input,
+.name input {
+    width: 24.73vw;
+    height: 5.59vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+    opacity: 1;
+}
+
+.sent {
+    width: 8.45vw;
+    height: 7.19vh;
+    margin-right: 44px;
+    margin-top: 20px;
+    background: #D31C75 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.sent a {
+    text-decoration: none;
+    text-align: center;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+@media (max-width:576px) {
+    .bg-text-container {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 70vw;
+        height: 59.49vh;
+    }
+
+    .text-container h1 {
+        text-align: center;
+        font: normal normal 900 25px/30px Heebo;
+
+    }
+
+    .text-container p {
+        text-align: center;
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    .email input,
+    .name input {
+        width: 50vw;
+        height: 3.9vh;
+
+    }
+
+    .sent {
+        margin-right: 3.2em;
+        width: 15vw;
+        height: 3.11vh;
+    }
+
+    .sent a {
+        font: normal normal bold 15px/20px Heebo;
+
+    }
+}
