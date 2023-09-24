@@ -54,16 +54,14 @@
     margin-top: 44px;
 }
 
-.name label,
-.email label {
+label {
     font: normal normal bold 16px/24px Heebo;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
 }
 
-.email input,
-.name input {
+input[type="text"] {
     width: 24.73vw;
     height: 5.59vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -71,23 +69,18 @@
     opacity: 1;
 }
 
-.sent {
+input[type="submit"] {
     width: 8.45vw;
     height: 7.19vh;
-    margin-right: 44px;
     margin-top: 20px;
     background: #D31C75 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-
-.sent a {
-    text-decoration: none;
     text-align: center;
     font: normal normal bold 22px/30px Heebo;
     letter-spacing: 0.33px;
     color: #FFFFFF;
     opacity: 1;
 }
+
 
 @media (max-width:576px) {
     .bg-text-container {
@@ -111,21 +104,15 @@
         font: normal normal normal 15px/22px Heebo;
     }
 
-    .email input,
-    .name input {
+    input[type="text"] {
         width: 50vw;
         height: 3.9vh;
 
     }
 
-    .sent {
-        margin-right: 3.2em;
+    input[type="submit"] {
         width: 15vw;
-        height: 3.11vh;
-    }
-
-    .sent a {
+        height: 4vh;
         font: normal normal bold 15px/20px Heebo;
-
     }
 }

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Heebo:wght@400;700&family=Roboto:wght@100&family=Satisfy&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@100&family=Satisfy&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: #E5EEFF;
+}
+
+.outerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+.box-grid {
+    width: 65.01vw;
+    height: 241.11vh;
+    margin-top: 268px;
+    margin-bottom: 266px;
+
+}
+
+.first-grid {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.text-box {
+    background-color: #020253;
+}
+
+.inner-text-box {
+    width: 26vw;
+    height: 21vh;
+}
+
+.inner-text-box h1 {
+    text-align: center;
+    font: normal normal bold 61px/80px Assistant;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+    opacity: 1;
+}
+
+.inner-text-box p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.second-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 35vh;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+
+.third-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 104.89vh;
+    padding-top: 10px;
+}
+
+.info {
+    background-color: #8E097C;
+}
+
+.info-text {
+    width: 31.25vw;
+    height: 14vh;
+}
+
+.info-text h1 {
+    text-align: center;
+    font: normal normal bold 35px/46px Assistant;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.info-text p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+}
+
+form {
+    direction: rtl;
+}
+
+label {
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #0EE1DA;
+    opacity: 1;
+    text-align: right;
+}
+
+input[type="text"] {
+    width: 22.78vw;
+    height: 5vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 3px 0px #0EE1DA;
+}
+
+#describtion {
+    /* textArea */
+    width: 22.78vw;
+    height: 12.5vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    box-shadow: 0px 3px 0px #0EE1DA;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 22.78vw;
+    height: 5vh;
+    background: #0EE1DA 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font: normal normal bold 24px/33px Heebo;
+    letter-spacing: 0.36px;
+    color: #011560;
+
+}
+
+.inner2-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+
+@media (max-width:576px) {
+    .outerBox {
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .box-grid {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .first-grid {
+        width: 100vw;
+        height: 111.88vh;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .inner-text-box {
+        width: 60vw;
+        height: 16.78vh;
+    }
+
+    .inner-text-box h1 {
+        font: normal normal bold 36px/47px Assistant;
+    }
+
+    .inner-text-box p {
+        text-align: center;
+        font: normal normal normal 20px/26px Assistant;
+    }
+
+    .text-box {
+        grid-row: 1/2;
+    }
+
+    .inner-grid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .second-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        height: 70vh;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    input[type="text"] {
+        width: 57vw;
+        height: 4.61vh
+    }
+
+    #describtion {
+        /* textArea */
+        width: 57vw;
+        height: 13.42vh;
+    }
+
+    input[type="submit"] {
+        width: 57vw;
+        height: 4.61vh
+    }
+
+    .third-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 600px 430px;
+        gap: 10px;
+        width: 100%;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .info-text {
+        direction: rtl;
+        width: 70vw;
+        height: 20vh;
+    }
+}

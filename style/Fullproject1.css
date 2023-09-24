@@ -71,8 +71,7 @@ form {
 }
 
 
-.f-name input,
-.email input {
+input[type="text"] {
     width: 27.21vw;
     height: 4.19vh;
     background: #F6F6F624 0% 0% no-repeat padding-box;
@@ -81,36 +80,31 @@ form {
     margin-left: 1em;
 }
 
-.f-name label,
-.email label {
+label {
+    margin-left: 1em;
     font: normal normal normal 16px/20px Varela Round;
     letter-spacing: 0px;
     color: #F9F9F9;
     opacity: 1;
 }
 
-.notification-btn {
+input[type="submit"] {
     width: 13.41vw;
     height: 4.19vh;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     text-align: center;
     line-height: 0.5;
-}
-
-.notification-btn a {
-    text-decoration: none;
     font: normal normal normal 16px/20px Varela Round;
     letter-spacing: 0px;
     color: #1C1C1C;
-    opacity: 1;
 }
+
 
 @media (max-width:576px) {
 
     .project1Content {
-        margin-top: 90px;
-        width: 327px;
-        height: 275px;
+        width: 100vw;
+        height: 100vh;
     }
 
     .project1Content h1 {
@@ -133,22 +127,17 @@ form {
         flex-direction: column;
     }
 
-    .f-name input,
-    .email input {
-        width: 300px;
-        height: 36px;
-        margin-bottom: 1em;
+    input[type="text"] {
+        width: 60vw;
+        height: 5.03vh;
     }
 
-    .notification-btn {
-
-        width: 300px;
-        height: 33px;
-
-    }
-
-    .notification-btn a {
+    input[type="submit"] {
+        width: 60vw;
+        height: 5.03vh;
         color: #2823FD;
+
     }
+
 
 }

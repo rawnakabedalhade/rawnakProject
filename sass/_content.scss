@@ -3,6 +3,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    width: 100vw;
+    height: 100px;
 }
 
 .background {
@@ -110,6 +112,7 @@ nav ul {
         opacity: 1;
     }
 }
+
 
 .btn1 a,
 .btn2 a {

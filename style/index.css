@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     direction: rtl;
+
 }
 
 .flex-center {
@@ -27,6 +28,14 @@
     flex-direction: row;
 }
 
+.flex-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 .background {
     display: block;
     position: fixed;
@@ -39,30 +48,25 @@
 
 .profile {
     /*profile photo*/
-    z-index: 100;
+
     margin-left: 50px;
     border-radius: 50%;
     width: 2.6vw;
     height: 4.63vh;
 }
 
-.logo {
+.logo-name {
     /* My Name*/
-    margin-right: 700px;
-    color: #000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.logo:hover {
-    color: black;
+    padding: 2em;
+    color: #000000;
     font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav,
 .hamburger {
     /*nav bar*/
     width: 100%;
-    /*Keeps it fixed while scrolling*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,10 +95,10 @@ nav ul li {
     margin-right: 20px;
     width: 100px;
     height: 70px;
-    display: block;
 }
 
 nav ul li a {
+    display: block;
     text-decoration: none;
     color: #000;
     line-height: 1.2;
@@ -128,32 +132,26 @@ nav ul li a:hover {
 }
 
 .portfolio p {
-    font: normal normal medium 20px/30px Heebo;
+    font: normal normal 20px/30px Heebo;
     font-size: 20px;
     text-align: center;
     color: #3A3A3A;
     opacity: 1;
 }
 
-.container {
-    /* contain the coding languages that used in the project*/
+
+.codingImages {
+    width: 70px;
+    height: 70px;
+}
+
+.technology {
     width: 100vw;
-    height: 12vh;
+    height: 100px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     margin-bottom: 0.46vh;
     opacity: 1;
-}
-
-.codingImages {
-    width: 5.2vw;
-    height: auto;
-}
-
-.languagesPhotosGrid {
-    /* grid to keep codingImages in one row */
-    width: 100vw;
-    height: auto;
 }
 
 #aboutMe {
@@ -221,7 +219,6 @@ nav ul li a:hover {
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.555);
     margin: 1em;
     padding-bottom: 2em;
-
 
 }
 
@@ -343,14 +340,15 @@ nav ul li a:hover {
 
 #contact .contact-img {
     margin-top: 0;
-    width: 770px;
+    margin-left: 0;
+    width: 700px;
     height: 660px;
 
 }
 
 #socialMedia {
     height: 200px;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(226, 226, 220);
 }
 
@@ -377,7 +375,7 @@ nav ul li a:hover {
 
 
 .license {
-    width: 100%;
+    width: 100vw;
     height: 30px;
     bottom: 0;
     background-color: #000;
@@ -411,7 +409,7 @@ nav ul li a:hover {
 .formControl {
     width: 29.29vw;
     margin-bottom: 2.09vh;
-    box-shadow: 0px 4px 0px 0px rgb(226, 226, 220);
+
 }
 
 .formControl label {
@@ -423,20 +421,23 @@ nav ul li a:hover {
 .formControl input {
     width: 100%;
     height: 4.89vh;
+    box-shadow: 0px 3px 0px rgb(226, 226, 220);
+
 }
 
-.formControl input[id=textContain] {
+.formControl textarea {
     width: 100%;
     height: 9.79020979020979vh;
+    resize: none;
+    box-shadow: 0px 3px 0px rgb(226, 226, 220);
 }
 
 
-@media (max-width:550px) {
+@media (max-width:576px) {
     /*for mobiles*/
 
     .hamburger {
         display: block;
-
     }
 
     nav,
@@ -446,9 +447,9 @@ nav ul li a:hover {
         direction: rtl;
         top: 0;
         right: 0;
-        margin-right: 4px;
+        padding: 10px 5px;
         border-radius: 0;
-        width: 98%;
+        width: 100vw;
         height: 40px;
         background-color: rgb(226, 226, 220);
 
@@ -456,22 +457,23 @@ nav ul li a:hover {
 
 
     .list {
-        margin-top: 40px;
-        margin-bottom: 2px;
+        margin-top: 60px;
+
     }
 
     nav ul li {
         flex-direction: column;
+        margin-right: 0;
+        height: unset;
     }
 
     nav ul li a {
+        display: block;
         line-height: 1.5;
         text-decoration: none;
         width: 100px;
         height: 35px;
         color: #000;
-        display: block;
-        margin-top: 1%;
         border: 2px solid black;
         background-color: rgb(226, 226, 220);
         text-align: center;
@@ -487,239 +489,177 @@ nav ul li a:hover {
         display: block;
     }
 
-    .background {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 331px;
-        z-index: 100;
-        background-color: rgb(243, 243, 235);
-        top: 0px;
-    }
-
-    .profile {
-
-        position: fixed;
-        z-index: 100;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        left: 10px;
-        top: 6px
-    }
-
     .logo {
-        position: absolute;
-        z-index: 100;
-        top: 10px;
-        left: 50px;
-
+        z-index: 101;
+        margin-left: 0px;
     }
 
-    section {
+    .logo .profile {
+        width: 40px;
+        height: 40px;
+    }
 
-        margin: auto auto;
+    .port-container {
+        background-image:
+            linear-gradient(to bottom, rgba(213, 213, 204, 0.5), rgba(255, 255, 255, 0.5)), url('../imges/layerColorBackground.jpeg');
+        height: 330px;
+        width: 100vw;
+    }
+
+    .portfolio {
         width: 348px;
         height: 168px;
-
     }
 
-    section h1 {
-        font-size: 46px;
-        top: 70px;
-        width: 233px;
-        height: 67px;
-        margin: auto auto;
-        direction: rtl;
-        color: #3A3A3A;
-        opacity: 1
+    .portfolio h1 {
+        font: normal normal 900 46px/67px Heebo;
     }
 
-    section p {
-        margin-top: 5px;
-        font-size: 20px;
-        width: 345px;
-        height: 97px;
-        direction: rtl;
-        text-align: center;
-        color: #3A3A3A;
-        opacity: 1
+    .portfolio p {
+        font: normal normal medium 15px/25px Heebo
     }
 
-    .container {
-
-        top: 330px;
+    .technology {
         width: 100vw;
-        height: 111px;
-        background: #FFFFFF 0% 0% no-repeat padding-box;
-        box-shadow: 0px 3px 6px #00000029;
-        opacity: 1
-    }
-
-    .codingImages {
-        width: 45px;
-        height: 45px;
-    }
-
-    .languagesPhotosGrid {
-
-        justify-content: center;
-        align-items: center;
-        width: 270px;
-        height: 45px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(6, 45px);
-        grid-template-rows: repeat(2, 100%)
+        height: auto;
     }
 
     #aboutMe {
-
-        position: absolute;
         width: 100vw;
-        height: 720px;
-        top: 531px;
+        height: 450px;
     }
 
-    #aboutMe>img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-left: 35vw;
-        margin-top: 5px;
-
-    }
-
-    #aboutMe>h2 {
-        margin: auto;
-        font-size: 35px;
-        width: 132px;
-        height: 52px;
-        color: #3A3A3A
-    }
-
-    #aboutMe>p {
-        font-size: 20px;
-        direction: rtl;
-        width: 323px;
-        height: 286px;
-        text-align: center;
-        color: #3A3A3A;
-        margin: auto;
-    }
-
-    #aboutMe>button {
-
-        width: 135px;
-        height: 28px;
-        background-color: rgb(243, 243, 235);
-        border-radius: 15px;
-        text-align: center;
-        margin-left: 35vw;
-        margin-top: 25px;
-
-    }
-
-    #gridContainer {
-        width: 100%;
-        height: 3179px;
-        top: 1272px;
+    .face-div {
+        width: 141px;
+        height: auto;
         margin-top: 0;
-        background: #F6F6F6;
-        opacity: 1;
-    }
-
-
-    #gridContainer>h2 {
-        width: 162px;
-        height: 37px;
-        font-size: 25px;
-        color: #3A3A3A;
-        opacity: 1;
-        text-align: center;
-        margin-top: 30px;
         margin: auto;
-    }
-
-    #gridContainer>p {
-        width: 349px;
-        height: 44px;
-        margin: auto;
-        text-align: center;
-        letter-spacing: 0px;
-        color: #3A3A3A;
-        opacity: 1
-    }
-
-    #gridContainer .projectsGrid {
-        display: grid;
-        grid-template-columns: repeat(1, 343px);
-        grid-template-rows: repeat(6, 437px);
+        display: flex;
         justify-content: center;
-        gap: 42px;
+        align-items: center;
+
     }
 
-    .project {
-        background-color: white;
+    #aboutMe .face {
+        margin-top: 2em;
+        width: 120px;
+        height: 120px;
+    }
 
+    #aboutMe .aboutContent {
+        height: 360px;
+        width: 90vw;
+    }
+
+    #aboutMe .aboutContent h2 {
+        font: normal normal 900 25px/37px Heebo;
+    }
+
+    #aboutMe .aboutContent p {
+        font: normal normal normal 15px/22px Heebo;
+        text-align: center;
+    }
+
+    #aboutMe .aboutContent>a {
+        /* Button to download the CV*/
+        display: block;
+        width: 140px;
+        height: 28px;
+        font: normal normal medium 10px/19px Heebo
+    }
+
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 342px;
+        height: 438px;
+        margin-bottom: 2em;
+    }
+
+    .card-img-container>img {
+        width: 342px;
+    }
+
+    .gallery-text-area-container {
+        height: 80px;
+        width: 355px;
+    }
+
+
+    .gallery-text-area-container>h3 {
+        font: normal normal 900 25px/37px Heebo;
+    }
+
+    .gallery-text-area-container>p {
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+
+    .card-text-container>h2 {
+        font: normal normal medium 16px/24px Heebo;
+    }
+
+    .card-technologies>img {
+        margin-top: 1em;
+        width: 50px;
     }
 
     #contact {
-        width: 100%;
-        height: 641px;
-        background-color: #3A3A3A;
-        opacity: 100%;
-        top: 4600px;
+        width: 100vw;
+        height: 642px;
     }
 
-    #information {
-        width: 100%;
-        height: 427px;
-        background-color: rgb(243, 243, 235);
-        top: 5100px;
+
+    #contact .inner-contact-text {
+        width: 315px;
+        height: 80px;
     }
 
-    #information .gridInformation {
+    #contact .inner-contact-text>h1 {
+        font: normal normal 900 25px/37px Heebo;
+
+    }
+
+    #contact .inner-contact-text>p {
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    #contact .contact-img {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        width: 185px;
+        height: 161px;
+    }
+
+    #contact .formControl input {
+        width: 310px;
+        height: 28px;
+        box-shadow: 0px 3px 0px rgb(226, 226, 220);
+    }
+
+    #contact .formControl textarea {
+        width: 310px;
+    }
+
+    #socialMedia {
+        height: 420px;
+        width: 100%;
+    }
+
+    #socialMedia .iconContainer {
+        width: 100%;
+        height: 100%;
         display: grid;
-        margin-top: 42px;
-        grid-template-columns: repeat(2, 55px);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
-        gap: 20px;
     }
 
-    .license {
-        width: 100%;
-        height: 30px;
-        bottom: 0;
-        background-color: #000;
-        position: fixed;
-        z-index: 100;
-    }
-
-    .license #all_winnings_reserved {
-        z-index: 100;
-        position: fixed;
-        width: 67px;
-        height: 13px;
-        text-align: right;
-        margin-top: 5px;
-        right: 10px;
-        direction: rtl;
-        color: rgb(243, 243, 235);
-    }
-
-    .license #myName {
-        z-index: 100;
-        position: fixed;
-        margin-top: 5px;
-        left: 10px;
-        width: 33px;
-        height: 13px;
-        text-align: left;
-        color: rgb(243, 243, 235);
-    }
 
 
 }
