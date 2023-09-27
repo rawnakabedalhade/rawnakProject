@@ -51,7 +51,6 @@
 
 .profile {
     /*profile photo*/
-
     margin-left: 50px;
     border-radius: 50%;
     width: 2.6vw;
@@ -509,15 +508,8 @@ nav ul li a:hover {
     }
 
     .logo {
-        /* z-index: 101;
-        margin-left: 0px; */
         display: none;
     }
-
-    /* .logo .profile {
-        width: 40px;
-        height: 40px;
-    } */
 
     .port-container {
         background-image:
@@ -629,7 +621,7 @@ nav ul li a:hover {
 
     #contact {
         width: 100vw;
-        height: 642px;
+        height: 680px;
     }
 
 
@@ -663,6 +655,10 @@ nav ul li a:hover {
 
     #contact .formControl textarea {
         width: 310px;
+    }
+
+    #contact .formControl input[type="submit"] {
+        margin-bottom: 2em;
     }
 
     #socialMedia {

@@ -208,12 +208,12 @@ input[type="submit"] {
     }
 
     .box {
-        width: 12vw;
+        width: 15vw;
         height: 10vh;
     }
 
     .box img {
-        width: 12vw;
+        width: 14vw;
         height: 10vh;
 
     }
@@ -245,7 +245,7 @@ input[type="submit"] {
 
     .form-container-main {
         width: 100vw;
-        height: 612px;
+        height: 87vh;
 
     }
 
@@ -262,6 +262,7 @@ input[type="submit"] {
 
     input[type="submit"] {
         width: 85vw;
+
     }
 
     #describtion {
