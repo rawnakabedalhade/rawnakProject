@@ -509,14 +509,15 @@ nav ul li a:hover {
     }
 
     .logo {
-        z-index: 101;
-        margin-left: 0px;
+        /* z-index: 101;
+        margin-left: 0px; */
+        display: none;
     }
 
-    .logo .profile {
+    /* .logo .profile {
         width: 40px;
         height: 40px;
-    }
+    } */
 
     .port-container {
         background-image:
