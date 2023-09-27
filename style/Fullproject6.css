@@ -13,14 +13,12 @@
     text-align: right;
 }
 
-
-.blue {
+.bg-blue {
     background-color: #0EE1E1;
 }
 
-
-.bg-blue {
-    background-color: #0EE1E1;
+.main {
+    margin-bottom: 2em;
 }
 
 .whatsapp>img {
@@ -41,6 +39,7 @@
     padding-right: 3em;
     padding-bottom: 90px;
 }
+
 
 #row2 {
     display: flex;
@@ -70,7 +69,6 @@
 }
 
 .square {
-    margin-top: 2em;
     margin-bottom: 2em;
     background: #F8F8F8 0% 0% no-repeat padding-box;
     display: flex;
@@ -78,6 +76,11 @@
     align-items: center;
     justify-content: center;
     height: 270px;
+}
+
+.square>img {
+    width: 6.15vh;
+    height: 2.86vw;
 }
 
 .title-box {
@@ -98,6 +101,7 @@
     background-color: #F0FFFF;
 
 
+
 }
 
 .form-title h2 {
@@ -113,6 +117,7 @@
     font: normal normal normal 15px/22px Heebo;
     letter-spacing: 0px;
     color: #000000;
+
 }
 
 label {
@@ -123,16 +128,16 @@ label {
 }
 
 input[type="text"] {
-    width: 426px;
-    height: 51px;
+    width: 27.73vw;
+    height: 7.13vh;
     background: #E5EEFF 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0px 3px 0px #0EE1E1;
 }
 
 input[type="submit"] {
-    width: 426px;
-    height: 51px;
+    width: 27.73vw;
+    height: 7.13vh;
     background: #0EE1E1 0% 0% no-repeat padding-box;
     opacity: 1;
     font: normal normal bold 20px/28px Heebo;
@@ -141,8 +146,8 @@ input[type="submit"] {
 }
 
 #describtion {
-    width: 426px;
-    height: 145px;
+    width: 27.73vw;
+    height: 20.27vh;
     background: #E5EEFF 0% 0% no-repeat padding-box;
     opacity: 1;
     box-shadow: 0px 3px 0px #0EE1E1;
@@ -150,8 +155,8 @@ input[type="submit"] {
 }
 
 .map {
-    width: 943px;
-    height: 768px;
+    width: 61.39vw;
+    height: 107.4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,8 +169,8 @@ input[type="submit"] {
 }
 
 .icon-circle-blue {
-    width: 95px;
-    height: 95px;
+    width: 6.18vw;
+    height: 13.2vh;
     border-radius: 50%;
     background: #0EE1E1 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -174,8 +179,8 @@ input[type="submit"] {
 }
 
 .icons-container {
-    width: 494px;
-    height: 95px;
+    width: 32.16vw;
+    height: 13.2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,45 +190,37 @@ input[type="submit"] {
 }
 
 .icon-circle-blue>img {
-    width: 40px;
-    height: 40px;
+    width: 2.6vw;
+    height: 5.6vh;
 }
 
 @media (max-width:576px) {
-
-
-    .form-container-main {
-        width: 370px;
-        height: 612px;
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
 
     }
 
-    .map {
-        width: 370px;
-        height: 312px;
-    }
-
-    .map img {
-        width: 313px;
-        height: 242px;
-
+    .whatsapp {
+        display: none;
     }
 
     .box {
-        width: 79px;
-        height: 65px;
+        width: 12vw;
+        height: 10vh;
     }
 
     .box img {
-        width: 79px;
-        height: 65px;
+        width: 11vw;
+        height: 10vh;
+
     }
 
     .content-header {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
+        width: 70vw;
+
     }
 
     .content-header>h1 {
@@ -233,4 +230,66 @@ input[type="submit"] {
     .content-header>p {
         font: normal normal normal 15px/22px Heebo;
     }
+
+    .square>img {
+        width: 11vh;
+        height: 10vw;
+    }
+
+    .form-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-container-main {
+        width: 100vw;
+        height: 612px;
+
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 85vw;
+    }
+
+    input[type="submit"] {
+        width: 85vw;
+    }
+
+    #describtion {
+        width: 85vw;
+        resize: none;
+    }
+
+
+    .map {
+        width: 100vw;
+        height: 312px;
+    }
+
+    .map img {
+        width: 85vw;
+        height: 242px;
+
+    }
+
+    .icon-circle-blue {
+        width: 11vw;
+        height: 8vh;
+    }
+
+    .icon-circle-blue>img {
+        width: 4vw;
+        height: 4vh;
+    }
+
+
 }

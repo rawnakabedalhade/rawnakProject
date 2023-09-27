@@ -14,28 +14,28 @@ This repository contains a portfolio project showcasing six landing pages. The p
 The project is organized into multiple landing pages, each focusing on different content or themes. Below is an overview of the structure:
 
 1. **Landing Page 1**
-   - Description: [Brief description or theme of the landing page 1]
-   - File: `landing_page_1.html`
+   - Description: Here & Now
+   - File: `Fullproject1.html`
 
 2. **Landing Page 2**
-   - Description: [Brief description or theme of the landing page 2]
-   - File: `landing_page_2.html`
+   - Description: Let us lead you forward
+   - File: `Fullproject2.html`
 
 3. **Landing Page 3**
-   - Description: [Brief description or theme of the landing page 3]
-   - File: `landing_page_3.html`
+   - Description: Good coffee for a good morning
+   - File: `Fullproject3.html`
 
 4. **Landing Page 4**
-   - Description: [Brief description or theme of the landing page 4]
-   - File: `landing_page_4.html`
+   - Description:Let us lead you forward
+   - File: `Fullproject4.html`
 
 5. **Landing Page 5**
-   - Description: [Brief description or theme of the landing page 5]
-   - File: `landing_page_5.html`
+   - Description: discover the world
+   - File: `Fullproject5.html`
 
 6. **Landing Page 6**
-   - Description: [Brief description or theme of the landing page 6]
-   - File: `landing_page_6.html`
+   - Description: think outside the box
+   - File: `Fullproject6.html`
 
 ## Running the Project
 1. Clone the repository to your local machine using:
