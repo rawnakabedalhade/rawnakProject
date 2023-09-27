@@ -236,6 +236,14 @@ input[type="submit"] {
         padding-right: 10px;
     }
 
+    .info-text h1 {
+        font: normal normal bold 25px/33px Assistant;
+    }
+
+    .info-text p {
+        font: normal normal normal 15px/19px Assistant;
+    }
+
     input[type="text"] {
         width: 57vw;
         height: 4.61vh

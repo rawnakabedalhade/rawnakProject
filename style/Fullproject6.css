@@ -213,7 +213,7 @@ input[type="submit"] {
     }
 
     .box img {
-        width: 11vw;
+        width: 12vw;
         height: 10vh;
 
     }
@@ -232,8 +232,8 @@ input[type="submit"] {
     }
 
     .square>img {
-        width: 11vh;
-        height: 10vw;
+        width: 11vw;
+        height: 10vh;
     }
 
     .form-title-container {
@@ -277,7 +277,7 @@ input[type="submit"] {
 
     .map img {
         width: 85vw;
-        height: 242px;
+        height: 34.8vh;
 
     }
 

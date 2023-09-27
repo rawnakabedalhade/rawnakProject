@@ -102,11 +102,12 @@ input[type="submit"] {
     }
 
     .text-container>h1 {
-        font-size: 35px;
+        font: normal normal bold 25px/33px Assistant;
+        margin-bottom: 1em;
     }
 
     .text-container>p {
-        font-size: 17px;
+        font: normal normal normal 15px/19px Assistant;
 
     }
 
