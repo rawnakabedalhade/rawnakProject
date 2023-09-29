@@ -24,12 +24,6 @@ body {
     flex-direction: column;
 }
 
-.flex-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
 
 .project1Content {
     width: 71.61vw;
@@ -82,7 +76,6 @@ input[type="text"] {
 }
 
 label {
-    margin-left: 1em;
     font: normal normal normal 16px/20px Varela Round;
     letter-spacing: 0px;
     color: #F9F9F9;
@@ -128,6 +121,12 @@ input[type="submit"] {
         flex-direction: column;
     }
 
+    .a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     input[type="text"] {
         width: 60vw;
         height: 5.03vh;
@@ -137,6 +136,10 @@ input[type="submit"] {
         width: 60vw;
         height: 5.03vh;
         color: #2823FD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
     }
 
