@@ -121,7 +121,7 @@ input[type="submit"] {
         flex-direction: column;
     }
 
-    .a {
+    .form-content {
         display: flex;
         justify-content: center;
         flex-direction: column;
