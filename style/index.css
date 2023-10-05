@@ -50,6 +50,7 @@
 
 }
 
+
 .profile {
     /*profile photo*/
     margin-left: 50px;
@@ -511,12 +512,26 @@ nav ul li a:hover {
     .logo {
         display: none;
     }
+}
 
+@media (max-width:900px) {
     .port-container {
         background-image:
             linear-gradient(to bottom, rgba(213, 213, 204, 0.5), rgba(255, 255, 255, 0.5)), url('../imges/layerColorBackground.jpeg');
         height: 330px;
         width: 100vw;
+    }
+
+    nav ul li a {
+        line-height: 2.7;
+    }
+
+    .logo-name {
+        font-size: 0.6em;
+    }
+
+    .profile {
+        width: 7vw;
     }
 
     .portfolio {
@@ -676,7 +691,4 @@ nav ul li a:hover {
         justify-content: center;
         align-items: center;
     }
-
-
-
 }

@@ -194,7 +194,7 @@ input[type="submit"] {
     height: 5.6vh;
 }
 
-@media (max-width:576px) {
+@media (max-width:900px) {
     .main {
         display: flex;
         flex-direction: column;

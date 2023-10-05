@@ -94,7 +94,7 @@ input[type="submit"] {
 }
 
 
-@media (max-width:576px) {
+@media (max-width:900px) {
 
     .project1Content {
         width: 100vw;

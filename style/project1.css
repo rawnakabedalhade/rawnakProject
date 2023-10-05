@@ -14,7 +14,7 @@ body {
     opacity: 1
 }
 
-@media (max-width:576px) {
+@media (max-width:900px) {
 
     .project img {
         width: 295px;
