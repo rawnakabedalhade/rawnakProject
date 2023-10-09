@@ -273,12 +273,12 @@ input[type="submit"] {
 
     .map {
         width: 100vw;
-        height: 312px;
+        height: 45vh;
     }
 
     .map img {
         width: 85vw;
-        height: 34.8vh;
+        height: 34vh;
 
     }
 
