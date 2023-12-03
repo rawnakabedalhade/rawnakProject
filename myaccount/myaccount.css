@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Heebo:wght@400;700;900&family=Pacifico&family=Roboto:wght@100&family=Satisfy&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+font-family: 'Satisfy', cursive;
+}
+table tbody tr{
+    background-color: rgb(192, 187, 187);
+}
+
+

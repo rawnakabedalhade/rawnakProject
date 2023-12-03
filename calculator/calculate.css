@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+width: 100vw;
+height: 100vh;
+background: #D4D4D2;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.calculator {
+    background: #1C1C1C;
+    border-radius: 10px;
+    padding: 20px;
+}
+.calculator form input{
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    box-shadow:  rgba(0, 0, 0, 0.2);
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    box-shadow: none;
+}
+form .display input{
+    background: transparent;
+    text-align: right;
+    border: none;
+    flex: 1;
+    font-size: 45px;
+    width:255px ;
+}
+input[value="AC"],input[value="+/-"],input[value="%"]{
+width: 60px;
+background:#D4D4D2 ;
+}
+input[value="7"],
+input[value="8"],
+input[value="9"],
+input[value="6"],
+input[value="5"],
+input[value="4"],
+input[value="3"],
+input[value="2"],
+input[value="1"],
+input[value="0"],
+input[value="."]
+ {
+    width: 60px;
+    background:#505050 ;
+}
+input[value="="]{
+    width: 135px;
+    background:#FF9500 ;
+}
+input[value="/"],input[value="X"],input[value="-"],input[value="+"]{
+    width: 60px;
+    background: #FF9500;
+}
