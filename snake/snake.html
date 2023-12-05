@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snake.css">
+    <script src="snake.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<h1> Sn<span><img src="Google-Noto-Emoji-Animals-Nature-22285-snake.svg"></span>ke Game</h1>
+<div class="container">
+    <div id="sound" onclick="soundCheck()"><input type="button" id="soundbtn" value="Sound-On"></input></div>
+    <h4 id="timeText">Timer:<span id="time">00:00</span></h4>
+    <h4 id="scoreText">Score:<span id="score">0</span></h4>
+</div>
+<canvas id="board"></canvas>
+
+<div id="gameOver" class="Game-Over">
+    <h4>GAME OVER</h4>
+    <button onclick=" location.reload();">RESTART</button>
+</div>
+
+</body>
+</html>
