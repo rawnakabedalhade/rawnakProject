@@ -1,0 +1,40 @@
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container-fluid {
+  height: 100vh;
+  width: 100vw;
+}
+.card {
+  margin: 1em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  border-radius: 20px;
+}
+#card {
+  height: 70%;
+}
+.card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(56, 53, 53);
+}
+.card-title sup {
+  color: rgb(255, 166, 0);
+}
+.card-text {
+  font-size: 2rem;
+}
+.form-floating {
+  width: 40%;
+}
+input[type="submit"] {
+  margin-left: 1em;
+  width: 20%;
+  height: 100%;
+  border-radius: 5px;
+}

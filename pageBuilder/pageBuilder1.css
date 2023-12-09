@@ -59,8 +59,7 @@ input[type="text"] {
     width: 26vw;
     height: 4.19vh;
 }
-
-button {
+.addbtn,.submit{
     cursor: pointer;
     background-color: rgb(68, 21, 111);
     width: 6.5vw;
