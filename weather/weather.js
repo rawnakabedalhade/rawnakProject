@@ -2,7 +2,7 @@ const search = document.getElementById("search");
 let input = document.getElementById("city");
 const list = document.getElementsByClassName("list-group");
 const key = "0ff9e7b53a98a66f915cd644b4f2298e";
-
+let weather = [];
 search.addEventListener("click", checkWeather);
 
 async function checkWeather(event) {
@@ -21,10 +21,11 @@ async function checkWeather(event) {
   }
 }
 function buildCard(data) {
-  document.getElementById("card").innerHTML = `
+  weatherStorage(data);
+  document.getElementById("card").innerHTML += `
  <div class="card m-20 " style="width: 18rem;" id="card">
   <div class="card-body">
-    <h5 class="card-title">${data.name}
+    <h5 class="card-title mt-2">${data.name}
     <sup>${data.sys.country}</sup>
     </h5>
     <p class="card-text">${Math.round(data.main.temp)} <sup>°C</sup></p>
@@ -33,20 +34,10 @@ function buildCard(data) {
     }.svg" alt="WeatherIcon">
     <p class="card-text">${data.weather[0].description}</p>
   </div>
-  </div>
-    
-    `;
+  </div>`;
 }
-function weatherIcon(data) {
-  if (data.weather[0].main == "Clouds") {
-    return "cloud.png";
-  } else if (data.weather[0].main == "Clear") {
-    return "sun.png";
-  } else if (data.weather[0].main == "Rain") {
-    return "rain2.png";
-  } else if (data.weather[0].main == "Drizzle") {
-    return "drizzle.png";
-  } else if (data.weather[0].main == "Mist") {
-    return "mist.png";
-  }
+function weatherStorage(data) {
+  weather.push(data);
+  localStorage.setItem("weather", JSON.stringify(weather));
+  console.log(weather);
 }

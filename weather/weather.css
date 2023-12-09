@@ -38,3 +38,21 @@ input[type="submit"] {
   height: 100%;
   border-radius: 5px;
 }
+@media (min-width: 900px) {
+  #card {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 700px) {
+  input[type="submit"] {
+    width: 20%;
+  }
+  input[type="text"] {
+    width: 75%;
+  }
+  .form-floating {
+    justify-content: center;
+    width: 100%;
+  }
+}
