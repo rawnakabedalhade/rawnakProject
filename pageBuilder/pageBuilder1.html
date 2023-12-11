@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pageBuilder1.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pageBuilder1.css" />
     <script src="pageBuilder1.js" defer></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="bg">
-        <div class="text-container">
-            <h1>בונה מסך</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores enim natus eos reprehenderit ullam
-                omnis
-                dolore nobis unde voluptates incidunt,</p>
-        </div>
-        <form action="" class="form">
-            <label for="">סוג האלמנט</label><br>
-            <input type="text" name="newelement" class="newelement"><br>
-        </form>
-        <div class="right">
-            <button class="addbtn">הוסף</button>
-            <button class="submit" onclick="SaveData()">שמור</button>
-        </div>
+      <div class="text-container">
+        <h1>בונה מסך</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+          enim natus eos reprehenderit ullam omnis dolore nobis unde voluptates
+          incidunt,
+        </p>
+      </div>
+      <form action="" class="form">
+        <label for="">סוג האלמנט</label><br />
+        <input type="text" name="newelement" class="newelement" /><br />
 
+        <label for="bgcInput">צבע רקע</label><br />
+        <input type="text" name="bgcInput" class="bgc-e" /><br />
+
+        <label for="widthInput">רוחב</label><br />
+        <input type="text" name="widthInput" class="width" /><br />
+        <label for="heightInput">גובה</label><br />
+        <input type="text" name="heightInput" class="height" /><br />
+
+        <label for="">תוכן</label><br />
+        <textarea name="" id="text-container"></textarea><br />
+
+        <label for="">צבע הגופן</label><br />
+        <input type="text" name="textColor" id="textColor" /><br />
+        <label for="">גודל הגופן</label><br />
+        <input type="text" name="fontsize" id="fontsize" /><br />
+        <label for="">סוג הגופן</label><br />
+        <input type="text" name="font" id="font" /><br />
+      </form>
+      <div class="right">
+        <button class="addbtn">הוסף</button>
+        <button class="submit" onclick="saveData()">שמור</button>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
