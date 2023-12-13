@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pageBuilder1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="pageBuilder1.js" defer></script>
     <title>Document</title>
   </head>
@@ -41,6 +48,9 @@
         <input type="text" name="font" id="font" /><br />
       </form>
       <div class="right">
+        <button class="delete" onclick="Delete()">
+          <i class="fa-solid fa-trash-can" style="color: #ffffff"></i>
+        </button>
         <button class="addbtn">הוסף</button>
         <button class="submit" onclick="saveData()">שמור</button>
       </div>

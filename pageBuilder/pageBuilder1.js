@@ -1,9 +1,22 @@
 const addbtn = document.querySelector(".addbtn");
 let typeofelement = document.querySelector(".newelement");
 const submitbtn = document.querySelector(".submit");
+const deleteBtn = document.querySelector(".delete");
 let element;
 let flag = false;
 let bgcElement, width, height, textcontainer, font, textColor, fontSize;
+
+let elements = [];
+// let newElements = [];
+
+// Initialize the elements array from local storage
+let data = localStorage.getItem("elements");
+if (data) {
+  elements = JSON.parse(data);
+} else {
+  elements = []; // Initialize as an empty array if no data is found in local storage
+}
+
 addbtn.addEventListener("click", function () {
   typeofelement = document.querySelector(".newelement");
   bgcElement = document.querySelector(".bgc-e");
@@ -24,6 +37,8 @@ addbtn.addEventListener("click", function () {
     textColor.value,
     fontSize.value
   );
+  addToArray(element);
+  // elements.forEach((element) => AddElementToBody(element));
   AddElementToBody(element);
 });
 
@@ -35,8 +50,7 @@ function createElement(
   textcontainer,
   font,
   textColor,
-  fontsize,
-  id
+  fontsize
 ) {
   return {
     type: typeofelement,
@@ -49,9 +63,10 @@ function createElement(
     fontFamily: font,
   };
 }
+let newElement;
 function AddElementToBody(element) {
   // Create a new element based on the provided type
-  let newElement = document.createElement(element.type);
+  newElement = document.createElement(element.type);
   newElement.classList.add("classDiv");
 
   // Set the background color if specified
@@ -83,35 +98,27 @@ function AddElementToBody(element) {
   if (element.fontFamily) {
     newElement.style.fontFamily = element.fontFamily;
   }
+  addToArrayElement(newElement);
+
   // Append the new element to the body
   document.body.appendChild(newElement);
+  console.log(newElement);
 }
 
-let elements = [];
-
-// function saveToLocalStorage() {
-//   elements.push(element);
-//   localStorage.setItem("elements", JSON.stringify(elements));
-// }
+function addToArray(element) {
+  elements.push(element);
+  console.log(elements);
+}
 
 window.saveData = () => {
   checkInput();
   if (flag) {
-    elements.push(element);
     localStorage.setItem("elements", JSON.stringify(elements));
+    clearInputs();
   } else {
     alert("Please Fill The inputs");
   }
 };
-
-function Update() {
-  let eArray = JSON.parse(localStorage.getItem("elements"));
-  if (eArray) {
-    eArray.forEach((element) => {
-      createElement(element);
-    });
-  }
-}
 
 function checkInput() {
   if (
@@ -124,9 +131,30 @@ function checkInput() {
     font.value === "" ||
     fontSize.value === ""
   ) {
-    // alert("Please Fill The inputs");
     flag = false;
   } else {
     flag = true;
   }
+}
+
+function clearInputs() {
+  document.querySelectorAll("input").forEach((input) => {
+    input.value = "";
+  });
+  document.querySelector("textarea").value = "";
+}
+
+window.Delete = () => {
+  newElements.forEach((element) => document.body.removeChild(element));
+  newElements = [];
+  elements = [];
+  console.log(elements);
+  localStorage.setItem("elements", JSON.stringify(elements));
+  clearInputs();
+};
+
+let newElements = [];
+function addToArrayElement(newElement) {
+  newElements.push(newElement);
+  console.log(newElements);
 }
