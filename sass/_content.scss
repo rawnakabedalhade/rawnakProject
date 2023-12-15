@@ -1,251 +1,156 @@
-.flex-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100vw;
-    height: 100px;
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Heebo:wght@400;700;900&family=Lobster&family=Pacifico&family=Roboto:wght@100&family=Satisfy&family=Varela+Round&display=swap");
+ul {
+  list-style: none;
 }
-
-.background {
-    display: block;
-    position: fixed;
-    width: $width;
-    height: 7.4vh;
-    top: 0;
-
+a {
+  text-decoration: none;
 }
-
-.profile {
-    /*profile photo*/
-    z-index: 100;
-    margin-left: 3.2vw;
-    border-radius: 50%;
-    width: 2.6vw;
-    height: 4.63vh;
+section {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../imges/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-
-.logo {
-    /* My Name*/
-    margin-right: 700px;
-    color: #000;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
-
-.logo:hover {
-    color: black;
-    font-weight: bold;
-}
-
-nav,
-.hamburger {
-    /*nav bar*/
-    width: $width;
-    /*Keeps it fixed while scrolling*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    height: 7.4vh;
-    margin: 0 auto;
-    background-color: $bgc;
-}
-
-.hamburger {
-    font-size: 1.2em;
-    color: black;
-    font-weight: bold;
-    padding: 5px;
-    display: none;
-}
-
 nav ul {
-    list-style-type: none;
-    display: flex;
-    height: 100%;
-
-    li {
-        margin-right: 20px;
-        width: 100px;
-        height: 70px;
-        display: block;
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-        line-height: 1.2;
-        font-size: 1.2em;
-    }
-
-    a:hover {
-        font-weight: bolder;
-    }
+  display: flex;
 }
-
-.port-container {
-    display: block;
-    width: $width;
-    height: 42.8vh;
-    background-image: $backgroundImg;
+nav ul li a {
+  margin: 30px;
+  font-family: calibri;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
 }
-
+.toggle:before {
+  content: "\f0c9";
+  font-family: fontAwesome;
+  line-height: 30px;
+  margin-right: 4px;
+  z-index: 1;
+  display: none;
+}
+.logo {
+  font-family: Lobster;
+  color: #000000;
+  font-size: 24px;
+  margin: 30px;
+}
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
 .portfolio {
-    /* section that contain the introduction of the project*/
-    z-index: 1;
-    width: $width;
-    height: 42.6vh;
+  /* section that contain the introduction of the project*/
+  z-index: 1;
+  width: $width;
+  height: 42.6vh;
 
-    h1 {
-        font-family: Heebo;
-        font-size: 5em;
-        letter-spacing: 0px;
-        color: #3A3A3A;
-        opacity: 1;
-    }
+  h1 {
+    font-family: $baseFont;
+    font-size: 3em;
+    letter-spacing: 0px;
+    color: #2d2a2a;
+    opacity: 1;
+  }
 
-    p {
-        font-family: Heebo;
-        font-size: 1.25em;
-        text-align: center;
-        color: #3A3A3A;
-        opacity: 1;
-    }
+  p {
+    font-family: $baseFont;
+    font-size: 1em;
+    text-align: center;
+    color: #3a3a3a;
+    opacity: 1;
+  }
 }
 
 .btn1,
 .btn2 {
-    margin-left: 1em;
+  width: 130px;
+  height: 42px;
+  border-radius: 10px;
+  font-family: $baseFont;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 0px 10px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
 }
-
+button:active {
+  transform: scale(1.1);
+}
 .btn1 a,
 .btn2 a {
-    display: block;
-    background-color: $bgc;
-    border-radius: 15px;
-    width: 153px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    font-family: Heebo;
-    color: #3A3A3A;
+  color: #ffffff;
 }
 
 .container {
+  width: $width;
+  background-color: white;
+  height: auto;
+
+  .technology {
     width: $width;
-    background-color: white;
     height: auto;
+    box-shadow: 0px 3px 6px #00000029;
 
-    .technology {
-        width: $width;
-        height: auto;
-        box-shadow: 0px 3px 6px #00000029;
-
-        img {
-            width: 100px;
-            height: 100px;
-        }
+    img {
+      width: 100px;
+      height: 100px;
     }
+  }
 }
 
-.license {
-    width: $width;
-    height: 30px;
-    bottom: 0;
-    background-color: #000;
+@media (max-width: 750px) {
+  .portfolio h1 {
+    font-size: 2em;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    background-color: #ebeef4;
+    flex-direction: column;
     position: fixed;
-    z-index: 100;
-
-    #all_winnings_reserved {
-        z-index: 100;
-        position: fixed;
-        width: 148px;
-        height: 28px;
-        text-align: right;
-        margin-top: 5px;
-        right: 10px;
-        color: $bgc
-    }
-
-    #myName {
-        z-index: 100;
-        position: fixed;
-        margin-top: 5px;
-        left: 10px;
-        width: 148px;
-        height: 28px;
-        text-align: left;
-        color: $bgc
-    }
-}
-
-
-@media (max-width:576px) {
-
-    .hamburger {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav .hamburger:hover+ul {
-        display: block;
-    }
-
-    nav,
-    .hamburger {
-        position: fixed;
-        z-index: 100;
-        direction: rtl;
-        top: 0;
-        right: 0;
-        padding: 10px 5px;
-        border-radius: 0;
-        width: 100vw;
-        height: 40px;
-        background-color: $bgc;
-
-    }
-
-
-    .list {
-        margin-top: 60px;
-
-    }
-
-    nav ul li {
-        flex-direction: column;
-        margin-right: 0;
-        height: unset;
-    }
-
-    nav ul li a {
-        display: block;
-        line-height: 1.5;
-        text-decoration: none;
-        width: 100px;
-        height: 35px;
-        color: #000;
-        border: 2px solid black;
-        background-color: $bgc;
-        text-align: center;
-        font-size: 1.2em;
-    }
-
-    .portfolio {
-        h1 {
-            margin-top: 1.5em;
-            font: normal normal 900 26px/35px Heebo;
-        }
-
-        p {
-            font: normal normal medium 15px/25px Heebo;
-        }
-
-    }
-
-
-
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
+    z-index: 1;
+    display: none;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  nav ul li a {
+    font-family: calibri;
+    font-style: 1.4em;
+    text-transform: uppercase;
+    color: #5c5c5c;
+  }
+  nav ul li a:hover {
+    color: #121212;
+  }
+  .toggle::before {
+    display: block;
+  }
+  .toggle.active:hover {
+    content: "\f00d";
+  }
 }
