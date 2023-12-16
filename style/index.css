@@ -299,32 +299,46 @@ button:active {
 }
 .project-1 {
   background-image: url("../imges/snake.png");
+  position: relative;
+  overflow: hidden;
 }
 .project-2 {
   background-image: url("../imges/calclutor.png");
+  position: relative;
+  overflow: hidden;
 }
 .project-3 {
   background-image: url("../imges/weatherapp.png");
+  position: relative;
+  overflow: hidden;
 }
 .project-4 {
   background-image: url("../imges/myaccount.png");
+  position: relative;
+  overflow: hidden;
 }
 .project-5 {
   background-image: url("../imges/country.png");
+  position: relative;
+  overflow: hidden;
 }
 .project-6 {
   background-image: url("../imges/manageu.png");
+  position: relative;
+  overflow: hidden;
 }
 .project-7 {
   background-image: url("../imges/pagebuilder.png");
+  position: relative;
+  overflow: hidden;
 }
 .project-background {
   height: 0;
+  transform: translateY(0);
   background: linear-gradient(rgba(0, 0, 0, 0.76), #f2ededcc);
   position: absolute;
   left: 0;
   bottom: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -351,6 +365,7 @@ button:active {
 .project-5:hover,
 .project-6:hover,
 .project-7:hover {
+  overflow: visible;
   transform: scale(1.1);
 }
 .project-1:hover .project-background,
