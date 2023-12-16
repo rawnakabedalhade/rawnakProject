@@ -338,7 +338,7 @@ button:active {
   color: #ffffff;
 }
 .project-background p {
-  color: var(--second-color);
+  color: white;
   font-size: 1rem;
   line-height: 1.8;
   font-weight: 600;
@@ -642,5 +642,32 @@ footer p:nth-child(2) {
   .about-text {
     width: 90%;
     text-align: center;
+  }
+  .box-1:hover,
+  .box-2:hover,
+  .box-3:hover,
+  .box-4:hover,
+  .box-5:hover,
+  .box-6:hover,
+  .box-7:hover {
+    transform: scale(1.1);
+  }
+  .project-1:hover,
+  .project-2:hover,
+  .project-3:hover,
+  .project-4:hover,
+  .project-5:hover,
+  .project-6:hover,
+  .project-7:hover {
+    transform: scale(1.1);
+  }
+  .project-1:hover .project-background,
+  .project-2:hover .project-background,
+  .project-3:hover .project-background,
+  .project-4:hover .project-background,
+  .project-5:hover .project-background,
+  .project-6:hover .project-background,
+  .project-7:hover .project-background {
+    height: 100%;
   }
 }
