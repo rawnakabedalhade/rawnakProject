@@ -5,6 +5,9 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+.typedText {
+  font-weight: bold;
+}
 ul {
   list-style: none;
 }
@@ -39,14 +42,6 @@ nav ul li a {
   color: #505050;
   font-size: 15px;
   font-weight: 700;
-}
-.toggle:before {
-  content: "\f0c9";
-  font-family: fontAwesome;
-  line-height: 30px;
-  margin-right: 4px;
-  z-index: 1;
-  display: none;
 }
 .logo {
   font-family: Lobster;
@@ -595,23 +590,46 @@ footer p:nth-child(2) {
     z-index: 1;
     display: none;
   }
+
   nav ul li {
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   nav ul li a {
     font-family: calibri;
-    font-style: 1.4em;
+    font-size: 1.4em;
     text-transform: uppercase;
     color: #5c5c5c;
+    text-decoration: none;
   }
+
   nav ul li a:hover {
     color: #121212;
   }
-  .toggle::before {
+
+  .toggle:before {
+    content: "\f0c9";
+    font-family: FontAwesome;
+    line-height: 30px;
+    margin-right: 4px;
+    z-index: 1;
+    display: block;
+    cursor: pointer;
+  }
+  .toggle:after:hover {
+    font-family: FontAwesome;
+    content: "\f00d";
+    line-height: 30px;
+    margin-right: 4px;
+    z-index: 1;
     display: block;
   }
-  .toggle.active:hover {
-    content: "\f00d";
+  .toggle:hover + ul,
+  nav ul:hover {
+    display: block;
   }
   .about-container {
     top: 0;
