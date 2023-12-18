@@ -7,3 +7,7 @@ var typingEffect = new Typed(".typedText", {
   backSpeed: 80,
   backDelay: 2000,
 });
+
+function toggleMobileMenu(menu) {
+  menu.classList.toggle("open");
+}

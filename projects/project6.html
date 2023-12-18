@@ -12,22 +12,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./projects.js" defer></script>
+
     <title>Document</title>
   </head>
 
   <body>
     <!-- navigation -->
-    <nav>
-      <!-- logo -->
-      <a href="#" class="logo" id="home">Rawnak Abed ALhade</a>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        <li><a href="#work">Work </a></li>
-      </ul>
-      <div class="toggle"></div>
-    </nav>
+    <header>
+      <nav>
+        <!-- logo -->
+        <a href="#" class="logo" id="home">Rawnak Abed ALhade</a>
+        <ul id="list">
+          <li><a href="../index.html/#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#work">Work </a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-container">
+        <a href="#" class="logo" id="home">Rawnak Abed ALhade</a>
+        <div id="hamburger-icon" onclick="toggleMobileMenu1(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="../index.html/#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#work">Work </a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <div class="port-container">
       <section class="portfolio flex-center">
         <h1>Think Out Side The Box</h1>
