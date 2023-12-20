@@ -7,12 +7,28 @@ let flag = false;
 let bgcElement, width, height, textcontainer, font, textColor, fontSize;
 
 let elements = [];
-// let newElements = [];
+let newElements = [];
 
 // Initialize the elements array from local storage
 let data = localStorage.getItem("elements");
+console.log(data);
 if (data) {
   elements = JSON.parse(data);
+  for (let element of elements) {
+    let e = createElement(
+      element.type,
+      element.backgroundColor,
+      element.width,
+      element.height,
+      element.content,
+      element.fontFamily,
+      element.textColor,
+      element.fontSize
+    );
+    AddElementToBody(e);
+    console.log(e);
+    // document.body.appendChild(e);
+  }
 } else {
   elements = []; // Initialize as an empty array if no data is found in local storage
 }
@@ -63,8 +79,9 @@ function createElement(
     fontFamily: font,
   };
 }
-let newElement;
+
 function AddElementToBody(element) {
+  let newElement;
   // Create a new element based on the provided type
   newElement = document.createElement(element.type);
   newElement.classList.add("classDiv");
@@ -99,9 +116,8 @@ function AddElementToBody(element) {
     newElement.style.fontFamily = element.fontFamily;
   }
   addToArrayElement(newElement);
-
-  // Append the new element to the body
   document.body.appendChild(newElement);
+
   console.log(newElement);
 }
 
@@ -153,7 +169,6 @@ window.Delete = () => {
   clearInputs();
 };
 
-let newElements = [];
 function addToArrayElement(newElement) {
   newElements.push(newElement);
   console.log(newElements);
