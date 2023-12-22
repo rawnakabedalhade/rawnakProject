@@ -81,6 +81,9 @@ The project is organized into multiple landing pages, each focusing on different
 7. **Project 7**
    - Description: Page Builder
    - File: `pageBuilder1.html`
+8. **Project 8**
+   - Description: Memory Game
+   - File: `MemoryGame.html`
 
 ## Running the Project
 
