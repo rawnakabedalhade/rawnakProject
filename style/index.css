@@ -441,6 +441,7 @@ button:active {
 .project-7:hover .project-background,
 .project-8:hover .project-background {
   height: 100%;
+  width: 80%;
   overflow: visible;
 }
 .icons-container {

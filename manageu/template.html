@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../sass/mainStyle.css" />
+    <link rel="stylesheet" href="../style/template.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="../projects/projects.js" defer></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <header>
+      <nav>
+        <!-- logo -->
+        <a href="#" class="logo" id="home">Rawnak Abed ALhade</a>
+        <ul id="list">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#work">Work </a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-container">
+        <a href="#" class="logo" id="home">Rawnak Abed ALhade</a>
+        <div id="hamburger-icon" onclick="toggleMobileMenu1(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#work">Work </a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="port-container">
+      <section class="portfolio flex-center">
+        <h1>Manage U</h1>
+        <p>
+          Manage Your Tasks Using This Website! <br />Programing: HTML5 ,
+          JavaScript ,Css ,BootStrap
+        </p>
+        <div class="btn-container flex-row">
+          <button class="btn1">
+            <a href="manageu.html">Live</a>
+          </button>
+          <button class="btn2">
+            <a href="../zip/manageu.zip" download="manageu">Download</a>
+          </button>
+        </div>
+      </section>
+    </div>
+    <div class="container flex-center">
+      <div class="technology flex-row">
+        <img class="codingImages" src="../imges/html.png" alt="HTML" />
+        <img class="codingImages" src="../imges/css.png" alt="CSS" />
+        <img
+          class="codingImages"
+          src="../imges/Bootstrap.png"
+          alt="Bootstrap"
+        />
+        <img class="codingImages" src="../imges/sass.png" alt="SASS" />
+        <img class="codingImages" src="../imges/Js.png" alt="Js" />
+      </div>
+    </div>
+
+    <div class="project flex-center">
+      <img src="../imges/manageu.png" alt="project" />
+    </div>
+  </body>
+</html>
