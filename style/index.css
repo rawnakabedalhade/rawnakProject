@@ -235,8 +235,14 @@ button:active {
   background-color: #ffffff;
   padding: 2% 10% 0px 10%;
 }
+.React-project {
+  height: 350px;
+  background-color: #ffffff;
+  padding: 2% 10% 0px 10%;
+}
 .html-css-project h1,
-.Js-projects h1 {
+.Js-projects h1,
+.React-project h1 {
   font-family: calibri;
   font-weight: bold;
   color: #3e3d3d;
@@ -260,7 +266,8 @@ button:active {
 .project-5,
 .project-6,
 .project-7,
-.project-8 {
+.project-8,
+#reactProjects {
   width: 400px;
   height: 260px;
   background-repeat: no-repeat;
@@ -272,7 +279,8 @@ button:active {
   flex-direction: column;
 }
 .box-container,
-.projects-container {
+.projects-container,
+.React-project {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -396,6 +404,11 @@ button:active {
   position: relative;
   overflow: hidden;
 }
+#reactProjects {
+  background-image: url("../imges/cardsManagement.png");
+  position: relative;
+  overflow: hidden;
+}
 .project-background {
   height: 0;
   transform: translateY(0);
@@ -429,7 +442,8 @@ button:active {
 .project-5:hover,
 .project-6:hover,
 .project-7:hover,
-.project-8:hover {
+.project-8:hover,
+#reactProjects:hover {
   transform: scale(1.1);
 }
 .project-1:hover .project-background,
@@ -439,7 +453,8 @@ button:active {
 .project-5:hover .project-background,
 .project-6:hover .project-background,
 .project-7:hover .project-background,
-.project-8:hover .project-background {
+.project-8:hover .project-background,
+#reactProjects:hover .project-background {
   height: 100%;
   width: 80%;
   overflow: visible;
